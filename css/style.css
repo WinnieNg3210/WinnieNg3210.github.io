@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap');
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.hide-mobile {
+    display: none;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: black;
+    z-index: 7;
+    padding: 8em 1.5em;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: .5em 0em;
+    font-size: 25px;
+}
+
+#exit {
+    position: absolute;
+    top: 2em;
+    left: 20em;
+}
+
+.navbar {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#top, #resume {
+    position: relative;
+}
+
+#top::before {
+    content: "";
+    background-image: url("../images/top-bg-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#top .container {
+    text-align: center;
+    padding: 10em 4em 7em;
+}
+
+#top h1, #top p, #resume h2, #resume p {
+    position: relative;
+    color: white;
+}
+
+h1 {
+    font-size: 3.75em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#about .container {
+    text-align: center;
+    padding: 3em;
+}
+
+h2 {
+    font-size: 22px;
+    letter-spacing: .05em;
+    font-weight: 400;
+}
+
+#resume::before {
+    content: "";
+    background-image: url("../images/resume-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px) brightness(60%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#resume .container {
+    text-align: center;
+    padding: 3em 0;
+}
+
+#resume h2 {
+    margin-bottom: 2em;
+}
+
+#resume button {
+    border: thin solid white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    padding: .75em 1.5em;
+    color: white;
+    font-weight: 300;
+}
+
+#projects {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    padding: 3em 2em;
+}
+
+#projects h2 {
+    margin-bottom: 2em;
+}
+
+#projects img {
+    width: 100%;
+    /* width: 311px;
+    height: 260px; */
+    padding: 1em 0;
+}
+
+#contact {
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    z-index: 1;
+}
+
+#contact .container {
+    padding: 0 3em;
+}
+
+#contact button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: thin solid black;
+    background-color: transparent;
+    cursor: pointer;
+    padding: .5em 1.5em;
+    font-weight: 300;
+}
+
+#contact button a {
+    color: black;
+}
+
+footer {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.social {
+    margin: 1em;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    #exit {
+        display: none;
+    }
+
+    .hide-tablet-desktop {
+        display: none;
+    }
+
+    .navbar .container {
+        padding: 1em 3em;
+    }
+
+    .navbar ul {
+        position: inherit;
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .navbar ul li {
+        margin: 0 0 0 2em;
+    }
+
+    #top .container {
+        padding: 15em 4em 7em;
+    }
+
+    #resume button {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #top::before {
+        content: "";
+        background-image: url("../images/top-bg-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(70%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    #about {
+        padding: 3em 5em;
+    }
+
+    #projects .project-preview {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+    }
+
+}

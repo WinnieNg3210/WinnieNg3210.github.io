@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Winnie Ng</title>
+</head>
+<body>
+    <div class="navbar fixed-top">
+        <div class="container">
+            <a href="#top" class="name">WINNIE NG</a>
+
+            <nav>
+                <div class="hide-tablet-desktop">
+                    <img id="mobile-cta" class="mobile-menu" src="images/icon-hamburger.svg" alt="Open-Close Navigation" width = "19px" height = "14px">
+                </div>
+                <ul class="hide-mobile show-tablet-desktop" id="nav">
+                    <li id="exit" class="exit-btn hide-mobile"><img src="images/icon-close.svg" alt="exit-menu"></li>
+                    <li><a href = "#about">ABOUT</a></li>
+                    <li><a href = "#projects">PORTFOLIO</a></li>
+                    <li><a href = "#resume">RESUME</a></li>
+                    <li><a href = "#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="top">
+        <div class="container">
+            <h1>HI, I'M WINNIE</h1>
+            <p>Front End Web Developer</p>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <h2>A LITTLE BIT ABOUT ME</h2>
+            <img src="" alt="">
+            <p>I am a self-taught and aspiring front end developer based in New York City. 
+                From the moment I created my first website, I knew I want to make this into my career.
+                It's an exciting world that's always evolving and offers an engaging challenge to continually learn and improve.
+            </p>
+        </div>
+    </div>
+    <div id="projects">
+        <h2>WHAT I'VE DONE</h2>
+        <div class="project-preview">
+            <div class="web-container">
+                <a href="https://winnieng3210.github.io/Coffee-Subscription-FrontEndMentor/">
+                    <img src="images/projects/Coffee-Sub-Preview.jpg" alt="Coffee SubScription">
+                </a>    
+            </div>
+            <div class="web-container">
+                <a href="https://winnieng3210.github.io/Loopstudios/">
+                    <img src="images/projects/LoopStudio Preview.jpg" alt="LoopStudio">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume">
+        <div class="container">
+            <h2>CHECK OUT MY RÉSUMÉ!</h2>
+            <button><a>Grab A Copy</a></button>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h2>GET IN TOUCH!</h2>
+            <p>Have a question or just want to chat? Feel free to shoot me an email!</p>
+            <button><a href="mailto: winnieng3210@gmail.com">Say Hello</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-nav">
+                <a href="https://www.linkedin.com/in/cwingng/"><img src="images/social/linkedin.png" alt="LinkedIn" class="social" width="30px" height="30px"></a>
+                <a href=""><img src="images/social/github.png" alt="Github" class="social" width="30px" height="30px"></a>
+            </div>
+            <p>Winnie Ng 2021</p>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('mobile-cta');
+        var nav = document.getElementById('nav');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
