@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-bg {
+    background: url("images/mobile/image-hero.jpg") no-repeat;
+    background-size: cover;
+}
+
+/* need to unhide during desktop */
+.hide-mobile {
+    display: none;
+} 
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    background: black;
+    z-index: 7;
+    padding: 2em 1.5em;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: .5em 0em;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.navLogo {
+    margin-bottom: 5em;
+}
+
+#exit {
+    position: absolute;
+    top: 2em;
+    left: 20em;
+}
+
+.logo {
+    width: 130px;
+    height: 25px;
+}
+
+.menu {
+    margin: .20em;
+}
+
+.container {
+    color: white;
+    padding: 2.5em 1em 3em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.immersive-box {
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin: 8em auto;
+}
+
+h1 {
+    text-align: left;
+    border: solid white;
+    padding: .5em;
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+
+h1, h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.interactive-img img {
+    padding-top: 2em;
+    height: auto;
+    width: 100%;
+}
+
+.container-2 {
+    padding: 3em 1.5em;
+}
+
+.about {
+    text-align: center;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 1.88em;
+    font-weight: normal;
+}
+
+p {
+    font-family: "Alata", sans-serif;
+    color: darkgray;
+}
+
+.container-3 {
+    margin-bottom: 5em;
+}
+
+.creation-top h2 {
+    text-align: center;
+}
+
+.vr-mobile {
+    width: 100%;
+
+}
+
+.vr-img {
+    padding: 0em 1em;
+    position: relative;
+    margin: 1em;
+}
+
+.mobile-creation .vr-img img {
+    filter: brightness(75%)
+}
+
+.bottom-text {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 7;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: normal;
+    margin: 0;
+    color: white;
+    text-align: left;
+}
+
+.mobileSeeAll {
+    padding: 1em 5em;
+}
+
+input[type=button][id=mobileBtn]{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: thin solid black;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline; */
+    letter-spacing: 2px;
+    padding: 15px 64px;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 3em 0;
+}
+
+#footer-nav {
+    margin: 2em 0;
+    font-family: "Alata", sans-serif;
+}
+
+#footer-nav li {
+    margin: 1.5em 0;
+}
+
+.footer-right {
+    margin: 3em 0 1em;
+}
+
+.social img {
+    margin: 0 .5em;
+}
+
+
+.attribution { 
+    padding: 1em;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1440px){
+
+    .top-bg {
+        background: url("images/desktop/image-hero.jpg") no-repeat;
+        background-size: 100%;
+    }
+
+
+    .container {
+        /* chose padding instead of margin because there would be white space at top with margin */
+        padding: 3em 5em 1em 9.75em;
+    }
+
+    .logo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .immersive-box {
+        margin: 4.5em 0;
+    }
+
+    h1 {
+        width: 50%;
+        font-size: 4.5em;
+        display: flex;
+        flex-wrap: wrap;
+        padding: .5em .75em .5em .5em;
+    }
+
+    .container-2 {
+        /* allows me to position text-overlay within the container-2 div */
+        position: relative;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .show-desktop {
+        display: inline-block;
+    }
+
+    .container-2 .overlayImg {
+        margin: 5em 9em;
+        position: relative;
+        z-index: 1;
+    }
+
+    .text-overlay {
+        background: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        padding: 2em 5em 0 5em;
+        z-index: 2;
+        text-align: left;
+
+        position: absolute;
+        right: 1%;
+        bottom: 15.5%;
+
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .text-overlay p {
+        font-size: 1.2em;
+    }
+
+    .creation-top {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10em; 
+    }
+
+    .desktopSeeAll { 
+        margin: 2em 0;
+    }
+
+    input[type=button][id=desktopBtn]{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border: thin solid black;
+        background: white;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline; */
+        letter-spacing: 2px;
+        padding: 15px 64px;
+    }
+    
+    .desktop-creation {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 5em;
+        padding: 0 4em;
+    }
+    
+    .bottom-text {
+        position: absolute;
+        left: 55px;
+        bottom: 35px;
+        z-index: 7;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: normal;
+        margin: 0;
+        color: white;
+        text-align: left;
+    }
+
+    .desktop-creation .vr-img{
+        margin: 1em 0;
+    }
+
+    .desktop-creation .vr-img img  {
+        opacity: 1;
+    }
+
+    .desktop-creation .vr-img img:hover  {
+        opacity: 0.5;
+    }
+
+    .desktop-creation .vr-img img {
+        filter: brightness(85%);
+    }
+
+    nav ul {
+        position: inherit;
+        width: 100%;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+        margin: 0 0 0 1.5em;
+    }
+
+    nav ul li a {
+        text-transform: none;
+        font-size: 19px;
+        font-family: "Alata", sans-serif;
+    }
+
+    footer {
+        text-align: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3em 9em;
+    }
+
+    #footer-nav ul {
+        display: flex;
+        margin: 1em 1em 0 0;
+    }
+
+    #footer-nav li {
+        margin: 0 1em 0 0;
+    }
+
+    .footer-logo .logo {
+        width: 130px;
+        height: 25px;
+    }
+
+    .footer-right {
+        margin: 0;
+    }
+
+    .footer-right .social, .footer-right .copyright {
+        text-align: right;
+        margin-right: 1em;
+    }
+
+    .footer-right .copyright {
+        margin-top: 2em;
+    }
+
+    .attribution { 
+        font-size: 18px; 
+    }
+
+}
