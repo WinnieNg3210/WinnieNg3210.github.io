@@ -1,0 +1,1385 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA;
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+    --hover-button: #66D2CF;
+    --dark-navy: #2C343E;
+    --disabled: #E2DEDB;
+}
+
+body {
+    margin: 0 1.5em;
+    padding: 0;
+    font-family: "Fraunces";
+    background-color: var(--light-cream);
+}
+
+a {
+    font-family: "Barlow";
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--grey);
+    font-size: small;
+    letter-spacing: 0.1em;
+}
+
+ul {
+    list-style-type: none;
+    
+    padding: 0;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+p {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: .94em;
+    line-height: 1.75em;
+}
+
+button {
+    margin-top: 1.5em;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 1.15em;
+    color: var(--light-cream);
+    background-color: var(--dark-cyan);
+    width: 75%;
+    height: 56px;
+    border-radius: .25em;
+    border: thin solid #0E8784;
+}
+
+.navbar {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .logo img {
+        width: 163px;
+        height: 17.5px;
+    }
+}
+
+footer {
+    margin: 5em auto;
+    text-align: center;
+    background-color: var(--dark-navy);
+    padding: 3em 0;
+
+    nav {
+        padding: 2em 0;
+        margin: auto;
+    }
+
+    li {
+        margin: 1em auto;
+    }
+
+    .social a img {
+        padding: 0 1em;
+    }
+
+}
+
+.hero {
+    background: url("../images/home/mobile/image-hero-coffeepress.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: .5em;
+
+    .container {
+        padding: 4em 1.25em;
+        text-align: center;
+        color: var(--light-cream);
+    }
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: 900;
+    }
+
+    span {
+        display: block;
+    }
+
+    p {
+        opacity: 70%;
+    }
+
+}
+
+.collection {
+    text-align: center;
+    margin-top: 6em;
+
+    .gradient-text {
+        font-size: 2.5em;
+        font-weight: 900;
+        text-transform: lowercase;
+        background-color: transparent;
+        background-image: linear-gradient(180deg, #E1E0DE 0%, #F7F6F1 100%);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+
+
+    .flavor {
+        margin-bottom: 5em;
+        color: var(--dark-grey-blue);
+    }
+
+    img {
+        z-index: 1;
+        width: 61%;
+        height: 40%;
+    }
+
+    p {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+.choose {
+    background-color: var(--dark-navy);
+    border-radius: .5em;
+    padding: 3em 1.5em;
+    margin-bottom: 38em;
+    height: 50em;
+
+    text-align: center;
+    color: var(--light-cream);
+
+    .chooseText h2 {
+        font-size: 1.75em;
+    }
+
+    .chooseText p {
+        margin-bottom: 0;
+    }
+
+    .why {
+        display: block;
+        background-color: var(--dark-cyan);
+        border-radius: .5em;
+        padding: 3em 1em;
+        margin: 1.5em auto;
+
+        img {
+            margin-bottom: 1.75em;
+        }
+
+        .truck {
+            margin-top: 1.75em; 
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            padding-right: 1.5em;
+            padding-left: 1.5em;
+        }
+    }
+
+}
+
+
+.hero-plan {
+    background: url("../images/plan/mobile/image-hero-blackcup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .5em;
+
+    .container {
+        padding: 4em 1.25em;
+        text-align: center;
+        color: var(--light-cream);
+    }
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+
+    p {
+        opacity: 70%;
+        margin-bottom: 5em;
+    }
+
+}
+
+.how, .how-plan {
+    text-align: center;
+    margin: 5em -1.5em;
+
+    h2 {
+        font-size: 5em;
+        margin-bottom: 0;
+        color: var(--pale-orange);
+    }
+
+    h3 {
+        font-size: 1.75em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p {
+        padding: 0 1.5em;
+    }
+}
+
+.how {
+    h1 {
+        color: #83888F;
+    }
+    h3 {
+        color: var(--dark-grey-blue);
+    }
+    
+    button {
+        width: 60%;
+    }
+}
+
+.how-plan {
+    
+    .steps {
+        background-color: var(--dark-grey-blue);
+        border-radius: .5em;
+        
+        padding: 2em 0;
+
+        div {
+            margin: 3em auto;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+        opacity: 80%;
+    }
+}
+
+.subscription {
+
+    .plan-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .selection-arrow {
+        padding-top: 2.5em;
+    }
+
+    h2 {
+        color: var(--grey);
+        font-size: 1.75em;
+        padding-right: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .panel {
+        display: none;
+
+        .option {
+            background-color: #F4F1EB;
+            border-radius: .5em;
+            padding: 1.5em 1em 1em 1em;
+            margin: 1em auto;
+        }
+
+        .selected, .selected:hover {
+            background-color:var(--dark-cyan);
+            color: white;
+
+            p {
+                color: white;
+            }
+        }
+
+        h4 {
+            font-size: 1.75em;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: .95em;
+        }
+    }
+
+    .panel.active {
+        display: grid;
+    }
+
+    button {
+        display: block;
+        margin: 3em auto;
+    }
+
+    // button:disabled {
+    //     background-color: var(--disabled);
+    // }
+}
+
+#orderSummary {
+    margin-top: 5em;
+     
+
+    .container {
+        background-color: var(--dark-navy);
+        border-radius: .5em;
+        padding: 1em;
+    }
+
+    p {
+        margin: 0 auto;
+        color: white;
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 24px;
+    }
+
+    h4 {
+        margin: .5em auto;
+        color: white;
+        font-family: "Barlow";
+        font-weight: 400;
+        text-transform: uppercase;
+        opacity: 50.37%;
+    }
+
+    span.blue {
+        color: var(--dark-cyan);
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+
+    .modal-content {
+        width: 90%;
+        margin: auto;
+        background-color: var(--light-cream);
+        border-radius: .5em;
+        border: thin solid black;
+    }
+
+    .container {
+        background-color: var(--dark-grey-blue);
+        padding: 1em;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 900;
+        color: white;
+    }
+    .orderText {
+        margin-bottom: 0;
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 24px;
+        color: var(--grey);
+        padding: 0 2em 0 1em;
+    }
+    .confirmation {
+        padding: 0 2em 0 1em;
+        opacity: 80%;
+    }
+
+    span.blue {
+        color: var(--dark-cyan);
+    }
+
+    .checkout {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em 1em 1em;
+
+        h3 {
+            font-weight: 900;
+            padding-top: 1.5em;
+        }
+    }
+}
+
+.hero-about {
+    background: url("../images/about/mobile/image-hero-whitecup.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: .5em;
+
+    .container {
+        padding: 4em 1.5em;
+        text-align: center;
+        color: var(--light-cream);
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    p {
+        opacity: 70%;
+    }
+}
+
+.commitment {
+    margin: 5em auto;
+    text-align: center;
+
+    .commitment-text {
+        margin: 3em auto;
+    }
+
+    h1 {
+        font-size: 2em;
+        color: var(--dark-grey-blue);
+    }
+
+    p {
+        color: var(--dark-grey-blue);
+        opacity: 80%;
+    }
+}
+
+.responsive-img {
+    position: relative;
+    display: inline-block;
+}
+
+.commitment-img {
+    background-image: url("../images/about/mobile/image-commitment.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: .5em;
+}
+
+.responsive-img img {
+    max-width: 100%;
+    border-radius: .5em;
+}
+
+.headquarters {
+    margin: auto;
+    text-align: center;
+
+    h2 {
+        margin: 3em auto;
+        color: var(--grey);
+        font-size: 1.5em;
+    }
+
+    .address {
+        margin: 3em auto;
+    }
+
+    address {
+        font-family: "Barlow";
+        font-style: normal;
+        font-size: 1em;
+        line-height: 26px;
+        color: var(--dark-grey-blue);
+    }
+
+    h3 {
+        font-size: 1.75em;
+        margin: 1em auto;
+    }
+}
+
+.quality {
+    text-align: center;
+    margin: 10em auto;
+    background-color: var(--dark-grey-blue);
+    border-radius: .5em;
+    color: var(--light-cream);
+    
+    .quality-text {
+        padding: 0 1.5em 3em;
+    }
+
+    h1 {
+        font-size: 1.75em;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: .94em;
+        opacity: 80%;
+    }
+
+    .latte-img {
+        background-image: url("../images/about/mobile/image-quality.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 279px;
+        height: 158px;
+        border-radius: .5em;
+
+        display: block;
+        margin: auto;
+        transform: translateY(-70px);
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    body {
+        margin: 0 2.5em;
+    }
+
+    .hide-tablet-desktop, .mobile-menu-exit {
+        display: none;
+    }
+
+    .show-tablet-desktop {
+        display: inline;
+    }
+
+    .navbar {
+
+        .logo img {
+            width: 203px;
+            height: 24px;
+        }
+
+        ul {
+            position: inherit;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 0;
+            margin-top: 0;
+
+            li {
+                margin: 0 0 0 2em;
+                letter-spacing: .92px;
+            }
+        }
+
+    }
+
+    footer {
+        margin: 5em auto;
+        text-align: center;
+        background-color: var(--dark-navy);
+        padding: 3em 0;
+    
+        nav {
+            padding: 2em 0;
+            margin: auto;
+        }
+    
+        li {
+            margin: 1em auto;
+        }
+    
+        .social a img {
+            padding: 0 1em;
+        }
+    
+    }
+
+    footer li {
+        display: inline;
+        padding: 0 1em;
+    } 
+
+    button {
+        width: 60%;
+    }
+
+    .hero {
+        background: url("../images/home/tablet/image-hero-coffeepress.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: .5em;
+
+        .container {
+            text-align: left;
+            padding: 5em 15em 5em 3em;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0 auto;
+        }
+
+    }
+
+    .collection {
+
+        .gradient-text {
+            font-size: 6em;
+            transform: translateY(120px);
+            z-index: -1;
+            margin-top: -50px;
+            
+        }
+
+        .flavor {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .flavor-text {
+            text-align: left
+        }
+
+        p {
+            padding-left: 0;
+            padding-right: 3.5em;
+        }
+
+        img {
+            // width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+        }
+
+    }
+
+    .choose {
+        padding: 3em;
+        height: 32em;
+        margin-bottom: 28em;
+
+        .chooseText {
+            padding: 0 2em 3em 2em;
+            
+        }
+
+        .why {
+            display: grid;
+            grid-template-columns: 30% auto;
+            padding: 2em .5em;
+        }
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .whyText {
+            text-align: left;
+
+            p {
+                padding-left: 0;
+            }
+        }
+    }
+    
+    .hero-plan {
+        background: url("../images/plan/tablet/image-hero-blackcup.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: .5em;
+
+        .container {
+            padding: 5em 18em 5em 3em;
+            text-align: left; 
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+
+    .how, .how-plan {
+        text-align: left;
+
+        .steps {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 2em;
+            
+        }
+
+        h3 {
+            margin: 1em auto;
+        }
+
+        p {
+            padding: 0 1em 0 0;
+
+        }
+    }
+
+    .how-plan {
+        margin: 7em -2.5em;
+
+        .steps {
+            padding: 7em 2.5em 2em 2em;
+        }
+    }
+
+    .how {
+        margin: 0;
+
+        button {
+            width: 33%;
+        }
+    }
+
+    .subscription {
+
+        .panel {
+            // display: grid;
+            grid-template-columns: 34% 34% 34%;
+            
+            .active {
+                display: grid;
+            }
+
+            .option {
+                display: block;
+                margin-right: 1.5em;
+                padding: 2em .5em 2em 1em;
+
+            }
+
+            p {
+                padding-right: 2em;
+                margin-bottom: 3em;
+            }
+        }
+
+        button {
+            width: 45%;
+        }
+    }
+
+    #orderSummary .container {
+        padding: 1em 2.5em;
+    }
+
+    .modal {
+        padding-top: 100px;
+
+        .modal-content {
+            width: 70%;
+        }
+
+        .container{
+            padding: 2em 2em 2em 3em;
+        }
+
+        .orderText {
+            padding: 0 2em 0 2em;
+        }
+
+        .confirmation {
+            padding: 0 2em 0 3em;
+        }
+
+        .checkout {
+            padding: 0 2em 1em 3em;
+        }
+    }
+
+    .hero-about {
+        background: url("../images/about/tablet/image-hero-whitecup.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: .5em;
+
+        .container {
+            text-align: left;
+            padding: 5em 14em 5em 3.5em;
+        }
+    
+        // .container {
+        //     padding: 4em 1.5em;
+        //     text-align: center;
+        //     color: var(--light-cream);
+        // }
+    
+        h2 {
+            font-size: 2em;
+        }
+    
+    }
+
+    .commitment {
+        display: grid;
+        grid-template-columns: 43% 50%;
+        column-gap: 3em;
+        margin: 8em auto;
+
+        .commitment-text {
+            text-align: left;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: .94em;
+        }
+    }
+
+    .commitment-img {
+        background-image: url("../images/about/desktop/image-commitment.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: .5em;
+    }
+
+
+    .headquarters {
+        text-align: left;
+        margin: 8em auto;
+
+        .addresses {
+            display: grid;
+            grid-template-columns: 38% 30% auto;
+        }
+
+        // for some reason the text doesn't align for Australia
+        // probably has to do with the size of the image up top
+        .aussie {
+            padding-top: .45em;
+        }
+    
+        .address {
+            margin: 0;
+        }
+
+        address {
+            line-height: 2em;
+        }
+
+    }
+
+    .quality {
+        margin: 18em auto 8em;
+        
+        .quality-text {
+            padding: 0 5em 3em;
+        }
+    
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    
+        .latte-img {
+            background-image: url("../images/about/tablet/image-quality.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 573px;
+            height: 320px;
+            border-radius: .5em;
+    
+            display: block;
+            
+            margin-bottom: -50px;
+            transform: translateY(-130px);
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        margin: 0 3.5em;
+    }
+
+    .navbar {
+        ul li {
+            margin: 0 0 0 3em;
+        }
+        nav li a:hover {
+            color: var(--dark-grey-blue);
+        }
+    }
+
+    button:hover {
+        background-color: var(--hover-button);
+        border: thin solid var(--hover-button);
+    }
+
+    .hero {
+        background: url("../images/home/desktop/image-hero-coffeepress.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: .5em;
+
+        .container {
+            padding: 4em;
+        }
+
+        h1 {
+            font-size: 3.4em;
+            line-height: 55px;
+        }
+
+        p {
+            padding-right: 28em;
+        }
+    }
+
+    .hero-plan {
+        background: url("../images/plan/desktop/image-hero-blackcup.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: .5em;
+
+        h1 {
+            font-size: 3.4em;
+        }
+        .container {
+            padding: 5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            
+        }
+    }
+
+    .how, .how-plan {
+        h3 {
+            padding-right: 4.5em;
+        }
+        p {
+            padding-right: 2em;
+        }
+    }
+
+    .how-plan {
+        margin: 7em -3.5em;
+    }
+
+    .sub-menu {
+        display: block;
+
+        li {
+            font-weight: 900;
+            padding: 30px 0;
+            font-size: 1.5em;
+            color: var(--disabled);
+            border-bottom: 1px solid var(--disabled);
+            cursor: pointer;
+
+            .num {
+                padding-right: 1em;
+            }
+        }
+
+        li:first-child {
+            padding-top: 0px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        
+        li.active {
+            color: var(--dark-grey-blue);
+        }
+
+        li.active .num {
+            color: var(--dark-cyan);
+        }
+
+    }
+
+    .subscription {
+        display: grid;
+        grid-template-columns: 30% auto;
+        column-gap: 75px;
+
+        .panel .option {
+            margin-left: 0;
+
+            &:hover {
+                background-color: var(--pale-orange) ;
+            }
+        }
+
+        button {
+            width: 33%;
+            margin-right: 0;
+
+            &:hover {
+                background-color: var(--hover-button);
+                border: thin solid var(--hover-button);
+            }
+        }
+    }
+
+    #orderSummary .container {
+        padding: 2em 4em;
+    }
+
+    .modal {
+        h4 {
+            margin: .5em auto .5em 1em;
+        }
+        
+        .modal-content{
+            width: 38%;
+        }
+
+        .container{
+            padding: 1em 1.5em;
+        }
+
+        .confirmation {
+            padding-right: 3.5em;
+        }
+    } 
+
+    .hero-about {
+        background: url("../images/about/desktop/image-hero-whitecup.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: .5em;
+
+        .container {
+            text-align: left;
+            padding: 3em 29em 3em 3.5em;
+        }
+    
+        // .container {
+        //     padding: 4em 1.5em;
+        //     text-align: center;
+        //     color: var(--light-cream);
+        // }
+    
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+    
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        margin: 0 5em;
+    }
+
+    button {
+        width: 20%;
+        font-size: 1.2em;
+    }
+
+    footer {
+        
+        .container-grid {
+            display: grid;
+            grid-template-columns: 28% 30% 60%;
+        }
+
+        .logo, nav {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav {
+            margin: 0;
+        }
+
+    }
+
+    .hero {
+        .container {
+            padding: 5em;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            line-height: 72px;
+        }
+
+        p {
+            padding-right: 46em;
+        }
+    }
+
+    .collection {
+
+        margin-bottom: 5em;
+
+        .gradient-text {
+            font-size: 10em;
+            transform: translateY(200px);
+            margin-top: -130px;
+            
+        }
+
+        .flavor-collection {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .flavor {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+        }
+
+        .flavor-text {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        p {
+            padding: 0 2em;
+        }
+
+        img {
+            width: 255px;
+            height: 193px;
+            // display: block;
+            // margin: auto;
+        }
+
+    }
+
+    .choose {
+        padding: 3em 5em 50px;
+        height: 30em;
+        margin-bottom: 20em;
+
+        .why {
+            grid-template-columns: unset;
+            padding: 3em 2em;
+        }
+
+        .whyText {
+            text-align: center;
+        }
+
+        .chooseText {
+            padding: 0 18em;
+
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        .why p, .chooseText p {
+            font-size: 1em;
+        }
+
+        .why-bg {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            column-gap: 30px;
+            text-align: center;
+            max-width: 1110px;
+            margin: 85px auto 0;
+        }
+    }
+
+    .how {
+        margin: auto 5.5em;
+
+        button {
+            width: 20%;
+        }
+    }
+
+    .hero-plan {
+        h1 {
+            font-size: 4.5em;
+        }
+        .container {
+            padding: 7em 5em;
+        }
+
+        p {
+            padding-right: 34em;
+        }
+    }
+
+    .how .steps, .how-plan .steps{
+        column-gap: 3.5em;
+    }
+
+    .how-plan {
+        margin: 7em auto;
+
+        h3 {
+            padding-right: 3em;
+        }
+
+        .steps {
+            padding-left: 5em;
+
+            p {
+                padding-right: 0;
+            }
+
+            div {
+                padding: 0 3em 0 0;
+            }
+        }
+        
+    }
+
+    .subscription {
+        padding: 3em;
+
+        .panel {
+            h4 {
+                margin-bottom: 1em;
+            }
+
+            .option {
+                padding: 2em 0 2em 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        // button:disabled {
+        //     cursor: disabled;
+        // }
+    }
+
+    .hero-about .container {
+        padding-right: 48em;
+    }
+
+    .commitment {
+        display: grid;
+        grid-template-columns: 43% 50%;
+        column-gap: 6em;
+        margin: 10em auto;
+        padding: 0 5em;
+
+        .commitment-text {
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            
+        }
+
+        p {
+            font-size: 1em; 
+        }
+    }
+
+    .headquarters {
+        .addresses {
+            grid-template-columns: 30% 34% auto;
+        }
+
+        .container {
+            padding: 0 5em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+    }
+
+    .quality {
+        margin: 18em auto 8em;
+
+        .container {
+            display: grid;
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+                "text coffee";
+        }
+        
+        .quality-text {
+            
+            text-align: left;
+            padding-top: 6em;
+        }
+    
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1em;
+            padding-right: 5em;
+        }
+    
+        .latte-img {
+            grid-area: coffee;
+            background-image: url("../images/about/desktop/image-quality.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 445px;
+            height: 474px;
+            border-radius: .5em;
+    
+            display: block;
+            
+            margin-bottom: 0;
+            transform: translateY(-100px) translateX(-50px);
+        }
+    }
+
+}
+
+    

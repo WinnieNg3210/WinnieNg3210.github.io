@@ -1,0 +1,258 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="images/shared/desktop/logo.svg" alt="logo"></a>
+      <nav>
+        <div class="hide-tablet-desktop">
+          <img id="mobile-cta" class="mobile-menu" src="images/shared/mobile/icon-hamburger.svg" alt="Open Navigation">
+        </div>
+
+        <ul class="show-tablet-desktop hide-mobile" id="nav">
+          <li id="mobile-exit" class="mobile-menu-exit"><img src="images/shared/mobile/icon-close.svg" alt="Close Navigation"></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="plan.html">Create your plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hero-plan">
+    <div class="container">
+      <h1>Create a plan</h1>
+      <p>Build a subscription plan that best fits your needs. We offer an assortment of the best 
+        artisan coffees from around the globe delivered fresh to your door.</p>
+    </div>
+  </section>
+
+  <section class="how-plan">
+
+    <!-- <div id="line-with-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div> -->
+
+    <div class="steps">
+      <div>
+        <h2>01</h2>
+        <h3>Pick your coffee</h3>
+        <p>Select from our evolving range of artisan coffees. Our beans are ethically 
+          sourced and we pay fair prices for them. There are new coffees in all profiles 
+          every month for you to try out.</p>
+      </div>
+      <div>
+        <h2>02</h2>
+        <h3>Choose your frequency</h3>
+        <p>Customize your order frequency, quantity, even your roast style and grind type. 
+          Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+      </div>
+      <div>
+        <h2>03</h2>
+        <h3>Recieve and enjoy!</h3>
+        <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+          world-class coffees curated to provide a distinct tasting experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="subscription">
+    <nav class="sub-menu hide-mobile">
+      <ul>
+        <li class="active"><span class="num">01</span> Preferences</li>
+        <li><span class="num">02</span> Bean type</li>
+        <li><span class="num">03</span> Quantity</li>
+        <li><span class="num">04</span> Grind option</li>
+        <li><span class="num">05</span> Deliveries</li>
+      </ul>
+    </nav>
+
+    <div class="sub-plan">
+      <div class="customizePlan" data-question="how">
+        <div class="plan-nav">
+          <h2>How do you drink your coffee?</h2>
+          <img class="selection-arrow active" src="images/plan/desktop/icon-arrow.svg" alt="open selection" width="19px" height="12px">
+        </div>
+        <div class="panel active">
+          <div class="option" data-question="how" data-answer="Capsule">
+            <h4>Capsule</h4>
+            <p>Compatible with Nespresso systems and similar brewers</p>
+          </div>
+          <div class="option" data-question="how" data-answer="Filter">
+            <h4>Filter</h4>
+            <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+          </div>
+          <div class="option" data-question="how" data-answer="Espresso">
+            <h4>Espresso</h4>
+            <p>Dense and finely ground beans for an intense, flavorful experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="customizePlan" data-question="bean">
+        <div class="plan-nav">
+          <h2>What type of coffee?</h2>
+          <img class="selection-arrow" src="images/plan/desktop/icon-arrow.svg" alt="open selection" width="19px" height="12px">
+        </div>
+        <div class="panel">
+          <div class="option" data-question="bean" data-answer="Single origin">
+            <h4>Single Origin</h4>
+            <p>Distinct, high quality coffee from a specific family-owned farm</p>
+          </div>
+          <div class="option"  data-question="bean" data-answer="Decaf">
+            <h4>Decaf</h4>
+            <p>Just like regular coffee, except the caffeine has been removed</p>
+            </div>
+          <div class="option" data-question="bean" data-answer="Blended">
+            <h4>Blended</h4>
+            <p>Combination of two or three dark roasted beans of organic coffees</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="customizePlan" data-question="quantity">
+        <div class="plan-nav">
+          <h2>How much would you like?</h2>
+          <img class="selection-arrow" src="images/plan/desktop/icon-arrow.svg" alt="open selection" width="19px" height="12px">
+        </div>
+        <div class="panel">
+          <div class="option" data-question="quantity" data-answer="250g">
+            <h4>250g</h4>
+            <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+          </div>
+          <div class="option" data-question="quantity" data-answer="500g">
+            <h4>500g</h4>
+            <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+          </div>
+          <div class="option" data-question="quantity" data-answer="1000g"> 
+            <h4>1000g</h4>
+            <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="grind-row" class="customizePlan" data-question="grind">
+        <div class="plan-nav">
+          <h2>Want us to grind them?</h2>
+          <img class="selection-arrow" id="grind-arrow" src="images/plan/desktop/icon-arrow.svg" alt="open selection" width="19px" height="12px">
+        </div>
+        <div class="panel">
+          <div class="option" data-question="grind" data-answer="Wholebean">
+            <h4>Wholebean</h4>
+            <p>Best choice if you cherish the full sensory experience</p>
+          </div>
+          <div class="option" data-question="grind" data-answer="Filter">
+            <h4>Filter</h4>
+            <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+          </div>
+          <div class="option" data-question="grind" data-answer="Cafetiere">
+            <h4>Cafetiére</h4>
+            <p>Course ground beans specially suited for french press coffee</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="customizePlan" data-question="delivery">
+        <div class="plan-nav">
+          <h2>How often should we deliver?</h2>
+          <img class="selection-arrow" id="delivery-arrow" src="images/plan/desktop/icon-arrow.svg" alt="open selection" width="19px" height="12px">
+        </div>
+        <div class="panel last">
+          <div class="option" data-question="delivery" data-answer="Every Week">
+            <h4>Every week</h4>
+            <p>$<span class="weekly"></span> per shipment. Includes free first-class shipping.</p>
+          </div>
+          <div class="option" data-question="delivery" data-answer="Every 2 Weeks">
+            <h4>Every 2 weeks</h4>
+            <p>$<span class="biWeekly"></span> per shipment. Includes free priority shipping.</p>
+          </div>
+          <div class="option" data-question="delivery" data-answer="Every Month">
+            <h4>Every month</h4>
+            <p>$<span class="monthly"></span> per shipment. Includes free priority shipping.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="orderSummary">
+        <div class="container">
+          <h4>Order Summary</h4>
+          <p class="orderText">&#8220;I drink my coffee <span class="howText"><span class="blue">_____</span>,</span> with a <span class="blue beanText">_____</span>
+            type of bean. <span class="blue quantityText">_____</span><span class="grindText"></span>, sent to me <span class="blue deliveryText">_____</span>.&#8221;</p>
+        </div>
+      </div>
+  
+      <button type="submit" id="orderBtn">Create your plan!</button>
+    </div>
+
+  </div>
+
+  <div id="orderModal" class="modal">
+
+    <div class="modal-content">
+      <div class="container">
+        <h4>Order Summary</h4>
+      </div>
+      <p class="orderText">&#8220;I drink my coffee <span class="howText"><span class="blue">_____</span>,</span> with a <span class="blue beanText">_____</span>
+        type of bean. <span class="blue quantityText">_____</span><span class="grindText"></span>, sent to me <span class="blue deliveryText">_____</span>.&#8221;</p>
+  
+      <p class="confirmation">Is this correct? You can proceed to checkout or go back to plan selection if something 
+        is off. Subscription discount codes can also be redeemed at the checkout.</p>
+  
+      <div class="checkout">
+        <h3>$<span class="orderTotal"></span>/ mo</h3>
+        <button type="submit" id="checkOutBtn">Checkout</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container-grid">
+
+      <a class="logo" href="index.html"><img src="images/shared/desktop/footer-logo.png" alt="logo" width="187.38" height="22.15"></a>
+
+      <nav>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="plan.html">Create your plan</a></li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href="#"><img src="images/shared/desktop/icon-facebook.svg" alt="FaceBook"></a>
+        <a href="#"><img src="images/shared/desktop/icon-twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/shared/desktop/icon-instagram.svg" alt="Instagram"></a>
+      </div>
+
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    var menu = document.getElementById('mobile-cta');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('mobile-exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+    });
+  </script>
+</body>
+
+</html>
